@@ -1,0 +1,33 @@
+doctype html
+html(lang = 'en')
+  include comps/_head
+  body
+    header.header
+      .container
+        .menu
+          button.btn.btn-again Again!
+          p.rules Guess Random Number (Between 1 & 100)!
+        h1.title Guess My Number!
+        .guessed-number ?
+    main.main
+      .container
+        .game-wrapper
+          .game-field
+            input.input-number(type = 'number')
+            button.btn.btn-check Check!
+          .stats
+            .reply
+              img.img.reply__img(src = 'images/customer-review.svg')
+              span.reply__message Choose Your Number...
+              img.img.img_end.reply__img_end(src = 'images/winner.svg')
+            p.score
+              img.img.score__img(src = 'images/net.svg')
+              | Score:&nbsp;
+              span.score__number 100
+              | &nbsp;Points
+            p.highscore
+              img.img.highscore__img(src = 'images/score.svg')
+              | Highscore:&nbsp;
+              span.highscore__number 0
+              | &nbsp;Points
+    include comps/_scripts
