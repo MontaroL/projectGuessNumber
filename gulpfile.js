@@ -2,15 +2,15 @@ const {src, watch, series, dest} = require ('gulp');
 
 const browserSync = require ('browser-sync').create();
 
-const pug = require ('gulp-pug');
-const scss = require ('gulp-sass');
-const babel = require ('gulp-babel');
-const terser = require ('gulp-terser');
-
 const autoprefixer = require ('gulp-autoprefixer');
 const imagemin = require ('gulp-imagemin');
 const concat = require ('gulp-concat');
 const del = require ('del');
+
+const pug = require ('gulp-pug');
+const scss = require ('gulp-sass');
+const babel = require ('gulp-babel');
+const terser = require ('gulp-terser');
 
 function build() {
     src([
