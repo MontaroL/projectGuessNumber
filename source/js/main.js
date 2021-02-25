@@ -87,3 +87,5 @@ const checkNumber = function () {
 
 btnCheck.addEventListener('click', checkNumber);
 btnAgain.addEventListener('click', playAgain);
+
+//TODO: LOCAL STORAGE THE HIGHSCORE!
