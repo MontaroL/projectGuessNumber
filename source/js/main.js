@@ -55,6 +55,7 @@ const checkNumber = function () {
   }
 
   else if (guessNumber === hiddenNumber) {
+    changeClass('html', 'add', 'win')
     changeClass('body', 'add', 'win')
     showMessage('.title', 'Congratulations!')
     showMessage('.guessed-number', hiddenNumber)

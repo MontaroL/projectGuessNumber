@@ -12,7 +12,7 @@ const scss = require ('gulp-sass');
 const babel = require ('gulp-babel');
 const terser = require ('gulp-terser');
 
-function build() {
+function build (building) {
     src([
         'source/*.html',
         'source/css/style.min.css',
@@ -21,6 +21,7 @@ function build() {
         'source/videos/**/*'
     ], {base: 'source'})
         .pipe(dest('build'))
+    building()
 }
 
 
@@ -71,7 +72,7 @@ function uglify() {
 function imgmin() {
     return src('source/images/**/*', {base: 'source'})
         .pipe(imagemin())
-        .pipe(dest('build/images'))
+        .pipe(dest('build'))
 }
 
 function clear() {
