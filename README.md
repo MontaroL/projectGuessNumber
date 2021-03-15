@@ -1,4 +1,4 @@
-#projectGuessNumber (Preview: https://projectguessnumber.netlify.app/)
+# projectGuessNumber (Preview: https://projectguessnumber.netlify.app/)
 
 ## PUG / SCSS / ES6+
 
